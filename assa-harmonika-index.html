@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="ASSA HARMONIKA - Jasa pembuatan Pintu Harmonika & Folding Gate. Custom ukuran, pasang baru, perbaikan. Melayani seluruh Jawa Timur & luar pulau.">
+<meta name="theme-color" content="#07172f">
+<title>ASSA HARMONIKA | Pintu Harmonika & Folding Gate</title>
+
+<style>
+:root{
+  --bg:#07172f;
+  --bg2:#0b2142;
+  --card:#102b4c;
+  --yellow:#ffc928;
+  --yellow2:#ffdf68;
+  --green:#20c76a;
+  --white:#fff;
+  --text:#edf5ff;
+  --muted:#a9bdd4;
+  --line:#214467;
+  --shadow:0 18px 45px rgba(0,0,0,.28);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{
+  font-family:Arial,Helvetica,sans-serif;
+  background:var(--bg);
+  color:var(--text);
+  line-height:1.6;
+}
+a{text-decoration:none;color:inherit}
+img{max-width:100%;display:block}
+.container{width:min(1120px,92%);margin:auto}
+.topbar{
+  background:#041024;
+  border-bottom:1px solid var(--line);
+  padding:9px 0;
+  font-size:12px;
+  color:var(--muted);
+}
+.topbar .container{display:flex;justify-content:space-between;gap:12px}
+header{
+  position:sticky;top:0;z-index:50;
+  background:rgba(7,23,47,.95);
+  backdrop-filter:blur(12px);
+  border-bottom:1px solid var(--line);
+}
+.nav{
+  min-height:70px;display:flex;align-items:center;justify-content:space-between;gap:15px;
+}
+.logo{display:flex;align-items:center;gap:10px;font-weight:900}
+.logo-mark{
+  width:42px;height:42px;border-radius:12px;
+  display:grid;place-items:center;
+  background:var(--yellow);color:#07172f;font-weight:1000;
+}
+.logo small{display:block;color:var(--yellow);font-size:10px;letter-spacing:1.5px}
+.navlinks{display:flex;gap:20px;font-size:13px;color:var(--muted)}
+.navlinks a:hover{color:var(--yellow)}
+.wa{
+  display:inline-flex;align-items:center;justify-content:center;gap:8px;
+  background:var(--green);color:#041b0e;
+  font-weight:900;border-radius:12px;padding:11px 16px;
+  box-shadow:0 8px 22px rgba(32,199,106,.22);
+}
+.hero{
+  padding:75px 0 65px;
+  background:
+    radial-gradient(circle at 85% 20%,rgba(255,201,40,.13),transparent 32%),
+    radial-gradient(circle at 15% 75%,rgba(32,199,106,.08),transparent 28%);
+}
+.hero-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:42px;align-items:center}
+.badge{
+  display:inline-block;background:rgba(255,201,40,.12);border:1px solid rgba(255,201,40,.35);
+  color:var(--yellow2);padding:7px 12px;border-radius:999px;font-size:12px;font-weight:900;
+  margin-bottom:18px;
+}
+h1{font-size:clamp(38px,6vw,70px);line-height:1.02;letter-spacing:-2px}
+h1 span{color:var(--yellow)}
+.hero p{margin:20px 0;color:var(--muted);font-size:17px;max-width:680px}
+.actions{display:flex;flex-wrap:wrap;gap:12px;margin:24px 0}
+.btn{
+  display:inline-flex;align-items:center;justify-content:center;
+  padding:13px 18px;border-radius:12px;font-weight:900;border:1px solid var(--line);
+}
+.btn-yellow{background:var(--yellow);color:#07172f;border-color:var(--yellow)}
+.btn-outline{background:transparent;color:var(--white)}
+.price-chip{
+  display:inline-flex;align-items:center;gap:8px;color:var(--muted);font-size:13px;
+}
+.price-chip b{color:var(--yellow);font-size:18px}
+.hero-card{
+  background:linear-gradient(145deg,#153b63,#0b203d);
+  border:1px solid var(--line);border-radius:24px;padding:28px;box-shadow:var(--shadow);
+}
+.hero-card .door{
+  height:300px;border-radius:18px;
+  background:
+    repeating-linear-gradient(90deg,#777 0 8px,#b8b8b8 8px 11px,#656565 11px 18px);
+  border:10px solid #222;
+  box-shadow:inset 0 0 40px rgba(0,0,0,.45);
+  position:relative;overflow:hidden;
+}
+.hero-card .door:after{
+  content:"ASSA";position:absolute;right:18px;bottom:18px;
+  color:#fff;background:#07172fdd;padding:5px 9px;border-radius:7px;font-weight:900;
+}
+.hero-card-info{display:flex;justify-content:space-between;gap:10px;margin-top:18px}
+.hero-card-info div{font-size:12px;color:var(--muted)}
+.hero-card-info strong{display:block;color:var(--white);font-size:14px}
+
+section{padding:75px 0}
+.alt{background:#091d38}
+.ey{color:var(--yellow);font-size:12px;font-weight:1000;letter-spacing:2px;margin-bottom:8px}
+h2{font-size:clamp(28px,4vw,45px);line-height:1.1}
+.sub{color:var(--muted);max-width:700px;margin-top:12px}
+.grid{display:grid;grid-template-columns:repeat(4,1fr);gap:15px;margin-top:30px}
+.card{
+  background:var(--card);border:1px solid var(--line);border-radius:18px;padding:22px;
+}
+.icon{
+  width:44px;height:44px;border-radius:12px;background:rgba(255,201,40,.12);
+  display:grid;place-items:center;font-size:21px;margin-bottom:16px;
+}
+.card h3{font-size:17px;margin-bottom:6px}
+.card p{font-size:13px;color:var(--muted)}
+
+.gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:15px;margin-top:30px}
+.gallery-item{
+  position:relative;min-height:230px;border-radius:18px;overflow:hidden;
+  border:1px solid var(--line);background:#102b4c;
+}
+.gallery-item img{width:100%;height:100%;min-height:230px;object-fit:cover}
+.gallery-label{
+  position:absolute;left:10px;right:10px;bottom:10px;
+  background:#07172fe8;border:1px solid #ffffff18;border-radius:10px;
+  padding:9px 11px;font-weight:900;font-size:12px;
+}
+.gallery-note{margin-top:14px;color:var(--muted);font-size:12px}
+
+.price-box{
+  display:grid;grid-template-columns:1fr 1fr;gap:25px;align-items:center;
+  margin-top:30px;background:linear-gradient(145deg,#132f52,#0c2443);
+  border:1px solid var(--line);border-radius:24px;padding:30px;
+}
+.price{font-size:48px;color:var(--yellow);font-weight:1000;line-height:1}
+.price small{font-size:13px;color:var(--muted);font-weight:normal}
+.list{list-style:none;margin-top:16px}
+.list li{margin:9px 0;color:var(--muted);font-size:14px}
+.list li::before{content:"✓";color:var(--green);font-weight:900;margin-right:8px}
+
+.steps{display:grid;grid-template-columns:repeat(5,1fr);gap:12px;margin-top:30px}
+.step{border:1px solid var(--line);background:var(--card);border-radius:16px;padding:18px}
+.num{color:var(--yellow);font-size:25px;font-weight:1000}
+.step h3{font-size:15px;margin:5px 0}
+.step p{color:var(--muted);font-size:12px}
+
+.cta{
+  margin:0 0 70px;border-radius:25px;padding:45px;
+  background:linear-gradient(120deg,#ffc928,#ffdd67);
+  color:#07172f;
+}
+.cta h2{max-width:650px}
+.cta p{margin:10px 0 20px;max-width:650px}
+.cta .wa{background:#07172f;color:#fff}
+
+footer{border-top:1px solid var(--line);padding:35px 0;color:var(--muted);font-size:12px}
+.footer-grid{display:flex;justify-content:space-between;gap:25px;flex-wrap:wrap}
+footer strong{color:#fff}
+
+.float-wa{
+  position:fixed;right:18px;bottom:18px;z-index:100;
+  width:58px;height:58px;border-radius:50%;display:grid;place-items:center;
+  background:var(--green);color:#062112;font-size:25px;font-weight:1000;
+  box-shadow:0 10px 28px rgba(0,0,0,.4);
+}
+
+@media(max-width:900px){
+  .hero-grid{grid-template-columns:1fr}
+  .grid{grid-template-columns:repeat(2,1fr)}
+  .steps{grid-template-columns:repeat(2,1fr)}
+  .price-box{grid-template-columns:1fr}
+  .gallery{grid-template-columns:repeat(2,1fr)}
+}
+@media(max-width:650px){
+  .topbar .container{flex-direction:column;gap:2px}
+  .navlinks{display:none}
+  .nav .wa{padding:9px 11px;font-size:12px}
+  .hero{padding:55px 0}
+  section{padding:55px 0}
+  h1{letter-spacing:-1px}
+  .hero-card .door{height:240px}
+  .grid{grid-template-columns:1fr}
+  .gallery{grid-template-columns:1fr;gap:12px}
+  .gallery-item,.gallery-item img{min-height:230px}
+  .steps{grid-template-columns:1fr}
+  .cta{padding:30px 22px}
+  .price{font-size:40px}
+}
+</style>
+</head>
+
+<body>
+<div class="topbar">
+  <div class="container">
+    <span>📍 Melayani Seluruh Jawa Timur & Luar Pulau</span>
+    <span>📞 Admin Mahdi: 0895 8050 14687</span>
+  </div>
+</div>
+
+<header>
+  <div class="container nav">
+    <a class="logo" href="#beranda">
+      <div class="logo-mark">AH</div>
+      <div>
+        <strong>ASSA HARMONIKA</strong>
+        <small>PINTU HARMONIKA & FOLDING GATE</small>
+      </div>
+    </a>
+    <nav class="navlinks">
+      <a href="#layanan">Layanan</a>
+      <a href="#keunggulan">Keunggulan</a>
+      <a href="#galeri">Galeri</a>
+      <a href="#harga">Harga</a>
+      <a href="#cara-pesan">Cara Pesan</a>
+    </nav>
+    <a class="wa" data-wa href="#">💬 WhatsApp</a>
+  </div>
+</header>
+
+<main>
+<section class="hero" id="beranda">
+  <div class="container hero-grid">
+    <div>
+      <div class="badge">JASA PEMBUATAN • CUSTOM • PASANG • PERBAIKAN</div>
+      <h1>PINTU HARMONIKA <span>& FOLDING GATE</span></h1>
+      <p>
+        Solusi pintu harmonika untuk toko, ruko, garasi, gudang, dan berbagai kebutuhan usaha.
+        Bisa custom ukuran, pasang baru, maupun perbaikan.
+      </p>
+      <div class="actions">
+        <a class="btn btn-yellow" data-wa href="#">💬 Konsultasi via WhatsApp</a>
+        <a class="btn btn-outline" href="#galeri">📸 Lihat Galeri</a>
+      </div>
+      <div class="price-chip">Harga mulai <b>Rp650.000</b> • Harga menyesuaikan ukuran</div>
+    </div>
+
+    <div class="hero-card">
+      <div class="door" aria-label="Ilustrasi pintu harmonika"></div>
+      <div class="hero-card-info">
+        <div><strong>GRATIS CAT</strong>Promo sesuai pesanan</div>
+        <div><strong>GARANSI 10 TAHUN</strong>Nilai layanan</div>
+        <div><strong>TERIMA KUNCI</strong>Siap digunakan</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="layanan">
+  <div class="container">
+    <div class="ey">LAYANAN ASSA HARMONIKA</div>
+    <h2>Dibuat sesuai kebutuhan Anda</h2>
+    <p class="sub">Konsultasikan model, ukuran, dan lokasi pemasangan kepada Admin Mahdi.</p>
+    <div class="grid">
+      <div class="card"><div class="icon">🏪</div><h3>Pintu Toko</h3><p>Pilihan pintu harmonika untuk area toko dan tempat usaha.</p></div>
+      <div class="card"><div class="icon">🚗</div><h3>Pintu Garasi</h3><p>Solusi praktis untuk akses garasi dan area penyimpanan.</p></div>
+      <div class="card"><div class="icon">🏢</div><h3>Ruko & Tempat Usaha</h3><p>Dapat disesuaikan dengan kebutuhan dan ukuran bukaan.</p></div>
+      <div class="card"><div class="icon">📦</div><h3>Gudang & Workshop</h3><p>Pintu untuk kebutuhan gudang, workshop, dan area kerja.</p></div>
+      <div class="card"><div class="icon">📐</div><h3>Custom Ukuran</h3><p>Ukuran dan kebutuhan dapat dikonsultasikan terlebih dahulu.</p></div>
+      <div class="card"><div class="icon">🔧</div><h3>Perbaikan</h3><p>Melayani kebutuhan perbaikan pintu harmonika.</p></div>
+      <div class="card"><div class="icon">🛠️</div><h3>Pasang Baru</h3><p>Siap membantu kebutuhan pemasangan baru.</p></div>
+      <div class="card"><div class="icon">🚚</div><h3>Area Layanan</h3><p>Seluruh Jawa Timur & luar pulau.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="alt" id="keunggulan">
+  <div class="container">
+    <div class="ey">KENAPA ASSA HARMONIKA?</div>
+    <h2>Keunggulan layanan</h2>
+    <p class="sub">Informasi layanan berdasarkan penawaran ASSA HARMONIKA.</p>
+    <div class="grid">
+      <div class="card"><div class="icon">💰</div><h3>Harga Terjangkau</h3><p>Harga mulai Rp650.000 dan menyesuaikan ukuran.</p></div>
+      <div class="card"><div class="icon">💪</div><h3>Material Kuat</h3><p>Mengutamakan material yang sesuai untuk kebutuhan pintu harmonika.</p></div>
+      <div class="card"><div class="icon">📐</div><h3>Bisa Custom</h3><p>Ukuran dan kebutuhan dapat dibicarakan sebelum pengerjaan.</p></div>
+      <div class="card"><div class="icon">⚡</div><h3>Pengerjaan Cepat</h3><p>Proses pengerjaan disesuaikan dengan kebutuhan proyek.</p></div>
+      <div class="card"><div class="icon">🎨</div><h3>Gratis Cat</h3><p>Promo gratis cat sesuai ketentuan pesanan.</p></div>
+      <div class="card"><div class="icon">🛡️</div><h3>Garansi 10 Tahun</h3><p>Garansi 10 tahun sebagaimana penawaran ASSA HARMONIKA.</p></div>
+      <div class="card"><div class="icon">🔑</div><h3>Terima Kunci</h3><p>Layanan hingga siap digunakan sesuai kesepakatan.</p></div>
+      <div class="card"><div class="icon">📍</div><h3>Jangkauan Luas</h3><p>Melayani seluruh Jawa Timur & luar pulau.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="galeri">
+  <div class="container">
+    <div class="ey">GALERI PEKERJAAN</div>
+    <h2>Contoh pekerjaan & model</h2>
+    <p class="sub">Gunakan galeri ini sebagai referensi. Foto dapat diganti dengan foto asli hasil pekerjaan ASSA HARMONIKA.</p>
+    <div class="gallery">
+      <div class="gallery-item">
+        <img src="https://images.unsplash.com/photo-1556912173-46c336c7fd55?auto=format&fit=crop&w=900&q=85" alt="Referensi pintu toko">
+        <div class="gallery-label">Pintu Toko / Usaha</div>
+      </div>
+      <div class="gallery-item">
+        <img src="https://images.unsplash.com/photo-1565793298595-6a879b1d9492?auto=format&fit=crop&w=900&q=85" alt="Referensi area garasi">
+        <div class="gallery-label">Pintu Garasi</div>
+      </div>
+      <div class="gallery-item">
+        <img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=900&q=85" alt="Referensi ruko">
+        <div class="gallery-label">Ruko / Tempat Usaha</div>
+      </div>
+      <div class="gallery-item">
+        <img src="https://images.unsplash.com/photo-1586528116493-da8e1e1e7b5c?auto=format&fit=crop&w=900&q=85" alt="Referensi gudang">
+        <div class="gallery-label">Gudang / Workshop</div>
+      </div>
+      <div class="gallery-item">
+        <img src="https://images.unsplash.com/photo-1511818966892-d7d671e672a2?auto=format&fit=crop&w=900&q=85" alt="Referensi custom ukuran">
+        <div class="gallery-label">Custom Ukuran</div>
+      </div>
+      <div class="gallery-item">
+        <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=900&q=85" alt="Referensi proyek komersial">
+        <div class="gallery-label">Proyek Komersial</div>
+      </div>
+    </div>
+    <p class="gallery-note">💡 Disarankan mengganti foto referensi dengan foto asli pekerjaan Anda untuk menampilkan portofolio yang lebih autentik.</p>
+  </div>
+</section>
+
+<section class="alt" id="harga">
+  <div class="container">
+    <div class="ey">HARGA</div>
+    <h2>Mulai dari Rp650.000</h2>
+    <p class="sub">Harga menyesuaikan ukuran, model, material, dan kebutuhan pemasangan.</p>
+    <div class="price-box">
+      <div>
+        <div class="price">Rp650.000 <small>mulai</small></div>
+        <p style="color:var(--muted);margin-top:12px">Konsultasikan ukuran dan kebutuhan Anda untuk mendapatkan estimasi.</p>
+        <a class="btn btn-yellow" data-wa href="#" style="margin-top:18px">💬 Minta Estimasi Harga</a>
+      </div>
+      <div>
+        <ul class="list">
+          <li>Harga menyesuaikan ukuran</li>
+          <li>Bisa custom</li>
+          <li>Gratis cat sesuai ketentuan</li>
+          <li>Garansi 10 tahun sesuai penawaran</li>
+          <li>Terima kunci sesuai kesepakatan</li>
+          <li>Melayani seluruh Jawa Timur & luar pulau</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="cara-pesan">
+  <div class="container">
+    <div class="ey">CARA PESAN</div>
+    <h2>Proses konsultasi sederhana</h2>
+    <p class="sub">Kirim detail kebutuhan Anda melalui WhatsApp Admin Mahdi.</p>
+    <div class="steps">
+      <div class="step"><div class="num">01</div><h3>Hubungi Admin</h3><p>Tekan tombol WhatsApp dan mulai konsultasi.</p></div>
+      <div class="step"><div class="num">02</div><h3>Kirim Foto</h3><p>Kirim foto lokasi atau bukaan yang akan dipasang.</p></div>
+      <div class="step"><div class="num">03</div><h3>Kirim Ukuran</h3><p>Berikan ukuran yang tersedia jika sudah diketahui.</p></div>
+      <div class="step"><div class="num">04</div><h3>Konsultasi</h3><p>Diskusikan model dan kebutuhan pengerjaan.</p></div>
+      <div class="step"><div class="num">05</div><h3>Estimasi & Proses</h3><p>Dapatkan estimasi dan lanjutkan sesuai kesepakatan.</p></div>
+    </div>
+  </div>
+</section>
+
+<div class="container">
+<section class="cta">
+  <div class="ey" style="color:#07172f">SIAP KONSULTASI?</div>
+  <h2>Butuh Pintu Harmonika atau Folding Gate?</h2>
+  <p>Hubungi Admin Mahdi untuk konsultasi ukuran, model, lokasi, dan estimasi harga.</p>
+  <a class="wa" data-wa href="#">💬 Hubungi Admin Mahdi</a>
+</section>
+</div>
+</main>
+
+<footer>
+  <div class="container footer-grid">
+    <div>
+      <strong>ASSA HARMONIKA</strong><br>
+      Pintu Harmonika & Folding Gate
+    </div>
+    <div>
+      Admin: <strong>MAHDI</strong><br>
+      WhatsApp: <strong>0895 8050 14687</strong>
+    </div>
+    <div>
+      Melayani <strong>Seluruh Jawa Timur & Luar Pulau</strong>
+    </div>
+  </div>
+</footer>
+
+<a class="float-wa" data-wa href="#" aria-label="Chat WhatsApp">☏</a>
+
+<script>
+const phone = "62895805014687";
+const message = "Halo Admin Mahdi, saya tertarik dengan jasa Pintu Harmonika & Folding Gate ASSA HARMONIKA. Saya ingin konsultasi ukuran, model, lokasi, dan estimasi harga.";
+const url = "https://wa.me/" + phone + "?text=" + encodeURIComponent(message);
+
+document.querySelectorAll("[data-wa]").forEach(function(el){
+  el.href = url;
+  el.target = "_blank";
+  el.rel = "noopener";
+});
+</script>
+</body>
+</html>
